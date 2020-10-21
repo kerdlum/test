@@ -10,7 +10,7 @@ router.get("/", (req, res) => {
   });
 });
 
-app.use("/ck", router);
+app.use(`/ck`, router);
 
 module.exports = app;
 module.exports.handler = serverless(app);
